@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.job_locator">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/home_foreground"
+        android:label="Job Locator"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Forgotpass"></activity>
+        <activity android:name=".changePassword" />
+        <activity android:name=".SearchPage" />
+        <activity
+            android:name=".gmap"
+            android:label="@string/title_activity_gmap" />
+        <activity android:name=".data2" />
+        <activity android:name=".list" />
+        <activity android:name=".Drawer" />
+        <activity
+            android:name=".HttpHandler"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Keyword" />
+        <activity android:name=".name" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
